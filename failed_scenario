@@ -1,0 +1,7 @@
+i = 0
+
+if i:
+    
+    print("success")
+else:
+    print("failed test")
