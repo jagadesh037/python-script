@@ -21,6 +21,13 @@ pipeline {
 				bat 'echo "Application Run Successful"'
 			}
 		}
+		stage('Stage 3 : verify the failed scenaio') {
+			steps {
+				bat 'echo "Lets trigger the application"'
+				bat 'python Hello.py'
+				bat 'echo "Application Run Successful"'
+			}
+		}		
       
     }
 }
