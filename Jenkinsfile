@@ -23,9 +23,16 @@ pipeline {
 		}
 		stage('Stage 3 : verify the failed scenaio') {
 			steps {
-				bat 'echo "Lets trigger the application"'
+				bat 'echo "Lets trigger the application with failed scenario"'
 				bat 'python Hello.py'
-				bat 'echo "Application Run Successful"'
+				bat 'echo "Application Run Successful with failed scenario"'
+			}
+		}	
+		stage('Stage 4 : verify the exception scenaio') {
+			steps {
+				bat 'echo "Lets trigger the application with exception scenario"'
+				bat 'python Hello.py'
+				bat 'echo "Application Run Successful with exception scenario"'
 			}
 		}		
       
