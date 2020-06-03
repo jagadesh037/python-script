@@ -28,8 +28,8 @@ print("Please select operation -\n" \
 # Take input from the user
 select = int(sys.argv[1])
  
-number_1 = 4
-number_2 = 5
+number_1 = int(sys.argv[2])
+number_2 = int(sys.argv[3])
  
 if select == 1:
     print(number_1, "+", number_2, "=",
