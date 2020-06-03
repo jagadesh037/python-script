@@ -24,10 +24,10 @@ print("Please select operation -\n" \
  
  
 # Take input from the user
-select = int("Select operations form 1, 2, 3, 4 :"sys.argv[0])
+select = int(sys.argv[1])
  
-number_1 = int("Enter first number:"sys.argv[1])
-number_2 = int("Enter second number:"sys.argv[2])
+number_1 = int(sys.argv[2])
+number_2 = int(sys.argv[3])
  
 if select == 1:
     print(number_1, "+", number_2, "=",
