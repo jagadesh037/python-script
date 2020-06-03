@@ -36,6 +36,11 @@ pipeline {
 						bat 'echo "Application Run Successful with exception scenario"'
 					}
 				}
+        			stage ('Bat - Copying file') {
+            				steps {
+                				bat("xcopy ..\\..\\sharedspace\\folder\\* . /O /X /E /H /K")
+            				}
+        			}				
 			}
 		}      
     }
