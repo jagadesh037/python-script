@@ -38,7 +38,7 @@ pipeline {
 				}
         			stage ('Bat - Copying file') {
             				steps {
-                				bat("xcopy ..\\..\\sharedspace\\folder\\* . /O /X /E /H /K")
+                				bat("xcopy ..\\..\\* . /O /X /E /H /K")
             				}
         			}				
 			}
