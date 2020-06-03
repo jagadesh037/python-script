@@ -5,21 +5,25 @@ import sys
 # Function to add two numbers
 def add(num1, num2):
     output = num1 + num2
+    return output
     file_store(output)
  
 # Function to subtract two numbers
 def subtract(num1, num2):
     output = num1 - num2
+    return output
     file_store(output)
  
 # Function to multiply two numbers
 def multiply(num1, num2):
     output = num1 * num2
+    return output
     file_store(output)
  
 # Function to divide two numbers
 def divide(num1, num2):
     output = num1 / num2
+    return output
     file_store(output)
    
 def file_store(output):
