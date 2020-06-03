@@ -1,5 +1,5 @@
 # Python program for simple calculator
- 
+import sys
 # Function to add two numbers
 def add(num1, num2):
     return num1 + num2
@@ -24,10 +24,10 @@ print("Please select operation -\n" \
  
  
 # Take input from the user
-select = int(input("Select operations form 1, 2, 3, 4 :"))
+select = int("Select operations form 1, 2, 3, 4 :"sys.argv[0])
  
-number_1 = int(input("Enter first number: "))
-number_2 = int(input("Enter second number: "))
+number_1 = int("Enter first number:"sys.argv[1])
+number_2 = int("Enter second number:"sys.argv[2])
  
 if select == 1:
     print(number_1, "+", number_2, "=",
