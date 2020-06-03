@@ -23,7 +23,7 @@ def divide(num1, num2):
     file_store(output)
    
 def file_store(output):
-    file = open("sample.txt","w")
+    file = open("C:\Users\LOKESH E\sample.txt","w")
     file.write(output)
     file.close()
  
