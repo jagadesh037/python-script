@@ -29,11 +29,11 @@ pipeline {
 						bat 'echo "Application Run Successful with failed scenario"'
 					}
 				}	
-				stage('Stage 4 : verify the exception scenaio') {
+				stage('Stage 4 : verify the calculator') {
 					steps {
-						bat 'echo "Lets trigger the application with exception scenario"'
+						bat 'echo "Lets trigger the application with calculator"'
 						bat 'python calulator.py'
-						bat 'echo "Application Run Successful with exception scenario"'
+						bat 'echo "Application Run Successful with calculator"'
 					}
 				}
 			
