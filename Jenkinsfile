@@ -32,7 +32,7 @@ pipeline {
 				stage('Stage 4 : verify the exception scenaio') {
 					steps {
 						bat 'echo "Lets trigger the application with exception scenario"'
-						bat 'python exception_scenario'
+						bat 'python calulator.py'
 						bat 'echo "Application Run Successful with exception scenario"'
 					}
 				}
