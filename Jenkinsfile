@@ -32,7 +32,7 @@ pipeline {
 				stage('Stage 4 : verify the calculator') {
 					steps {
 						bat 'echo "Lets trigger the application with calculator"'
-						bat 'python calulator.py'
+						bat 'python calculator.py'
 						bat 'echo "Application Run Successful with calculator"'
 					}
 				}
