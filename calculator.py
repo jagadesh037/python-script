@@ -26,9 +26,11 @@ print("Please select operation -\n" \
  
  
 # Take input from the user
+print("select the operation")
 select = int(sys.argv[1])
- 
+print("number1 input")  
 number_1 = int(sys.argv[2])
+print("number2 input")
 number_2 = int(sys.argv[3])
  
 if select == 1:
