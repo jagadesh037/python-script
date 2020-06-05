@@ -5,6 +5,8 @@ pipeline {
 		stage('checkout') {
 			steps {
 				git credentialsId: 'github', url: 'https://github.com/jagadesh037/python-script'
+				scoop bucket add extras
+				scoop install springboot
 			}
 		}		
 		stage('Stage 1 : Check Python Installed or not -- Pre-requestic') {
@@ -17,7 +19,7 @@ pipeline {
                            
             }
         }
-		stage('Parallel Stage') {
+'''		stage('Parallel Stage') {
 			parallel {     
 
 				stage('Stage 2 : Run the Appliation') {
@@ -43,6 +45,6 @@ pipeline {
 				}
 			
 			}
-		}      
+		} '''     
     }
 }
