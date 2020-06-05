@@ -19,7 +19,7 @@ pipeline {
                            
             }
         }
-'''		stage('Parallel Stage') {
+		stage('Parallel Stage') {
 			parallel {     
 
 				stage('Stage 2 : Run the Appliation') {
@@ -45,6 +45,6 @@ pipeline {
 				}
 			
 			}
-		} '''     
+		}      
     }
 }
