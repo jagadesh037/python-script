@@ -2,13 +2,6 @@ pipeline {
 	agent any
      
 	stages {
-		stage('checkout') {
-			steps {
-				git credentialsId: 'github', url: 'https://github.com/jagadesh037/python-script'
-				scoop bucket add extras
-				scoop install springboot
-			}
-		}		
 		stage('Stage 1 : Check Python Installed or not -- Pre-requestic') {
 			steps {
 				bat 'echo off'
