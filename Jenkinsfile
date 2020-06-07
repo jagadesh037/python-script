@@ -26,6 +26,7 @@ pipeline {
 					steps {
 						bat 'echo "Lets trigger the application"'
 						bat 'python Hello.py'
+						bat 'python pip.py'
 						bat 'echo "Application Run Successful"'
 					}
 				}
